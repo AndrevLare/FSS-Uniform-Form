@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedido de Uniformes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>🎒 Pedido de Uniformes</h1>
+      <p>
+        Complete los datos. Puede agregar varios estudiantes en un solo pedido.
+      </p>
+    </div>
+
+    <form id="form">
+      <div class="wrap">
+        <!-- Selección de colegio -->
+        <div class="card">
+          <div class="card-title">Colegio</div>
+          <div class="fields">
+            <div class="field full">
+              <label>Selecciona el colegio</label>
+              <select id="colegio" required>
+                <option value="" disabled selected>Cargando colegios...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Datos del acudiente -->
+        <div class="card">
+          <div class="card-title">Datos del acudiente</div>
+          <div class="fields">
+            <div class="field full">
+              <label>Nombre completo del acudiente</label>
+              <input id="nombre_padre" placeholder="Ej: María López" required />
+            </div>
+            <div class="field full">
+              <label>Correo electrónico</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="correo@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="field full">
+              <label>Teléfono de contacto</label>
+              <input id="telefono" type="tel" placeholder="300 000 0000" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Estudiantes -->
+        <div>
+          <div class="students-header">
+            <div class="students-title">Estudiantes</div>
+          </div>
+          <div class="students-section" id="estudiantes"></div>
+          <div style="margin-top: 12px">
+            <button type="button" class="btn-add" id="btn-agregar">
+              <span style="font-size: 18px">+</span> Agregar otro estudiante
+            </button>
+          </div>
+        </div>
+
+        <!-- Tratamiento de datos -->
+        <div class="card">
+          <div class="card-title">Produccion del uniforme</div>
+          <div class="fields">
+            <div class="field full">
+              <label>
+                <input type="checkbox" id="terminos" required />
+                Autorizo la producción del uniforme con los datos
+                proporcionados. Entiendo que el proceso de producción comenzará
+                una vez se confirme el pedido y no se podrán hacer cambios en
+                los datos del estudiante después de este punto.
+              </label>
+              <label>
+                <input type="checkbox" id="terminos" required />
+                Acepto el tratamiento de mis datos personales.
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total -->
+        <div class="total-card">
+          <span class="total-label">Total a pagar</span>
+          <span class="total-value" id="total-display">$0</span>
+        </div>
+
+        <!-- Enviar -->
+        <button type="submit" class="btn-submit" id="btn-submit">
+          <div class="spinner" id="spinner"></div>
+          <span id="btn-texto">Continuar al pago →</span>
+        </button>
+        <p class="nota">
+          Será redirigido a la pasarela de pago segura de Wompi
+        </p>
+      </div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
