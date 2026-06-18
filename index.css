@@ -315,3 +315,9 @@ select:disabled {
     grid-column: 1;
   }
 }
+
+.terminos-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

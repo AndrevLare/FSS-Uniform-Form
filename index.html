@@ -52,7 +52,30 @@
             </div>
             <div class="field full">
               <label>Teléfono de contacto</label>
-              <input id="telefono" type="tel" placeholder="300 000 0000" />
+              <input
+                id="telefono"
+                type="tel"
+                placeholder="300 000 0000"
+                required
+              />
+            </div>
+            <div class="field full">
+              <label>Dirección</label>
+              <input
+                id="direccion"
+                type="text"
+                placeholder="Ej: Calle 123 #45-67"
+                required
+              />
+            </div>
+            <div class="field full">
+              <label>Cedula de ciudadanía</label>
+              <input
+                id="cedula"
+                type="number"
+                placeholder="1234567890"
+                required
+              />
             </div>
           </div>
         </div>
@@ -72,19 +95,24 @@
 
         <!-- Tratamiento de datos -->
         <div class="card">
-          <div class="card-title">Produccion del uniforme</div>
+          <div class="card-title">
+            Tratamiendo de datos Y envio del formulario
+          </div>
           <div class="fields">
             <div class="field full">
-              <label>
+              <label class="terminos-label">
                 <input type="checkbox" id="terminos" required />
-                Autorizo la producción del uniforme con los datos
-                proporcionados. Entiendo que el proceso de producción comenzará
-                una vez se confirme el pedido y no se podrán hacer cambios en
-                los datos del estudiante después de este punto.
+                <span
+                  >Confirmo la veracidad de los datos y autorizo la producción
+                  del uniforme con los datos proporcionados. Entiendo que el
+                  proceso de producción comenzará una vez se confirme el pedido
+                  y no se podrán hacer cambios en los datos del estudiante
+                  después de este punto.</span
+                >
               </label>
-              <label>
+              <label class="terminos-label">
                 <input type="checkbox" id="terminos" required />
-                Acepto el tratamiento de mis datos personales.
+                <span>Acepto el tratamiento de mis datos personales.</span>
               </label>
             </div>
           </div>

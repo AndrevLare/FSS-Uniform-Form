@@ -218,6 +218,8 @@ function recolectarDatos() {
     parent_name,
     email: document.getElementById("email").value.trim(),
     phone: document.getElementById("telefono").value.trim(),
+    direction: document.getElementById("direccion").value.trim(),
+    identification: document.getElementById("cedula").value.trim(),
     school: document.getElementById("colegio").value,
     concept: `Uniformes — ${parent_name}`,
     students,
