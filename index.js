@@ -1,7 +1,7 @@
 // ── Configuración ────────────────────────────────────────────────────
 const WORKER_URL = "https://fsspays.jorgitoa0109.workers.dev";
 const WOMPI_PUBLIC_KEY = "pub_test_h6S6eyASHaWVn15WsUZP0pFnTqfSvFx9";
-const REDIRECT_URL = "https://checkout.wompi.co/";
+const REDIRECT_URL = "https://andrevlare.github.io/FSS-Uniform-Form/pago-terminado";
 
 // ── Estado ───────────────────────────────────────────────────────────
 let catalog = {};
